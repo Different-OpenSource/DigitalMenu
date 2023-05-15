@@ -4,8 +4,8 @@ interface Props {
   categories: string[];
   filterItems: (category: string) => void;
 }
-
-const Categories: FC<Props> = ({ categories, filterItems }) => {
+// Create an component named Categories with props categories and filterItems
+export const Categories: FC<Props> = ({ categories, filterItems }) => {
   let [currentCategory, setCurrentCategory] = useState<number>(0);
 
   const handleCategoryClick = (categoryIndex: number, category: string) => {
@@ -30,5 +30,3 @@ const Categories: FC<Props> = ({ categories, filterItems }) => {
     </div>
   );
 };
-
-export default Categories;
