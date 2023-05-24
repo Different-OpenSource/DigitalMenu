@@ -1,9 +1,18 @@
 .container {
-  padding: 10px;
+  flex: auto;
+  padding: 15px;
   background: #ffee00;
   color: rgb(185, 19, 19);
   font-size: 20px;
   text-align: center;
+}
+
+.searchButtonBox {
+  /* flex: auto; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
 }
 
   
