@@ -1,41 +1,95 @@
-"use client"
-import ItemCard from './components/ItemCard'
+import Image from 'next/image'
 import styles from './page.module.css'
-import './teste.css'
 
-export default async function Home() {
+export default function Home() {
   return (
-    <div className='test-page'>
-    <div className='test-container'>
-      <ItemCard   
-        title={"Hamburguer"}
-        description={"Alface, tomate, carne em um pão macio com gergelim"}
-        price={12}
-        src={"https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2598&q=80"}
-        alt={"hamburguer"}
-        handle_click={() => alert("Hamburguer")}
-      />
-    </div>
-    <div className='test-container2'>
-      <ItemCard   
-        title={"Pizza mussarela"}
-        description={"Molho de tomate, queijo e manjericão s d asd adasdasd dasnasnsdnaasld"}
-        price={55.98}
-        src={"https://images6.alphacoders.com/130/1308388.jpeg"}
-        alt={"Pizza"}
-        handle_click={() => alert("Pizza")}
-      />
-    </div>
-    <div>
-      <ItemCard   
-        title={"Fettuccine ao molho sugo"}
-        description={"Fettuccine, molho de tomate e parmesão."}
-        price={35.80}
-        src={"https://img.freepik.com/fotos-gratis/estilo-de-vida-alimento-massas-gostoso-gourmet_1350-50.jpg?w=1380&t=st=1685481129~exp=1685481729~hmac=4fde46a11edf920f29ce04ff2b4e48cfa79fea75667c87e7fc85869bff2f4a94"}
-        alt={"Pizza"}
-        handle_click={() => alert("Fettuccine")}
-      />
-    </div>
-  </div>
+    <main className={styles.main}>
+      <div className={styles.description}>
+        <p>
+          Get started by editing&nbsp;
+          <code className={styles.code}>src/app/page.tsx</code>
+        </p>
+        <div>
+          <a
+            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            By{' '}
+            <Image
+              src="/vercel.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={100}
+              height={24}
+              priority
+            />
+          </a>
+        </div>
+      </div>
+
+      <div className={styles.center}>
+        <Image
+          className={styles.logo}
+          src="/next.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
+
+      <div className={styles.grid}>
+        <a
+          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            Docs <span>-&gt;</span>
+          </h2>
+          <p>Find in-depth information about Next.js features and API.</p>
+        </a>
+
+        <a
+          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            Learn <span>-&gt;</span>
+          </h2>
+          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
+        </a>
+
+        <a
+          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            Templates <span>-&gt;</span>
+          </h2>
+          <p>Explore the Next.js 13 playground.</p>
+        </a>
+
+        <a
+          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+          className={styles.card}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <h2>
+            Deploy <span>-&gt;</span>
+          </h2>
+          <p>
+            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          </p>
+        </a>
+      </div>
+    </main>
   )
 }

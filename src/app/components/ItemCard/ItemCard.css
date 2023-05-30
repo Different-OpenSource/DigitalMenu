@@ -14,7 +14,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
   }
 
-
 .item-card-content {
     position: relative;
     display: flex;
@@ -44,10 +43,10 @@
     margin-right: 10px;
   }
   
-
   .item-title{
     margin-top: 1%;
   }
+
   .item-description{
     margin-top: 1%;
   }
