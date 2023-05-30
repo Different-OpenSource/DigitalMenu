@@ -1,0 +1,46 @@
+.item-image {
+  img {
+    height: 300px;
+    width: 500px;
+  }
+
+  height: auto;
+  width: 500px;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item-title {
+  margin-top: 24px;
+
+  span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.item-description {
+  margin-top: 16px;
+  text-align: justify;
+
+  span {
+    font-size: 14px;
+  }
+}
+
+.item-price {
+  margin-top: 16px;
+
+  span {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}
+
+.item-page-container {
+  padding: 48px;
+}
