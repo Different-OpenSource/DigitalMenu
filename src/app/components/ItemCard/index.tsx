@@ -20,18 +20,24 @@ const ItemCard: React.FC<ItemCardProps> = ({
 }) => {
 
   return (
-    <div className="item-card">
-      <div className="item-card-inside-div" >
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>Price: ${price}</p>
-        {/* <p>{handle_click}</p> */}
-        <button onClick={handle_click}>
-          teste button
-        </button>
-        <img src={src} alt={alt} />
+    <div className="item-card" onClick={handle_click}>
+      <div className="item-card-content">
+        <div className="left-column">
+            <div className='item-title'>
+                <h2 >{title}</h2>
+            </div>
+            <div className='item-description'>
+                <p >{description}</p>
+            </div>
+            <div className='item-price'>
+                <p><strong>${price}</strong></p>
+            </div>
+        </div>
+        <div className="right-column">
+            <img className='item-image' src={src} alt={alt} />
+        </div>
       </div>
-    </div>
+  </div>
   );
 };
 
