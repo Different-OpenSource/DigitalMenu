@@ -1,7 +1,5 @@
-'use server'
-import React, { useEffect, useRef } from 'react';
+"use client"
 import './ItemCard.css';
-
 
 interface ItemCardProps {
   title: string;
@@ -11,6 +9,7 @@ interface ItemCardProps {
   alt: string;
   handle_click: () => void;
 }
+
 const ItemCard: React.FC<ItemCardProps> = ({
   title,
   description,
@@ -27,7 +26,7 @@ const ItemCard: React.FC<ItemCardProps> = ({
         <p>{description}</p>
         <p>Price: ${price}</p>
         {/* <p>{handle_click}</p> */}
-        <button onClick={() => handle_click}>
+        <button onClick={handle_click}>
           teste button
         </button>
         <img src={src} alt={alt} />
