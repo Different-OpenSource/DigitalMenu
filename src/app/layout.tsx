@@ -14,6 +14,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const teste = () => {
+    console.log('opa')
+  }
+
   return (
     <html lang="en">
       <body className={inter.className}>
@@ -22,7 +27,9 @@ export default function RootLayout({
         description='Alface, tomate, carne em um pão macio com gergilin' 
         price={28} 
         src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2598&q=80'  
-        alt='hamburguer'/>
+        alt='hamburguer'
+        handle_click={() => teste()}
+        />
         {children}</body>
     </html>
   )
