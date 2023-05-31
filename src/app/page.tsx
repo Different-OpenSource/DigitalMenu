@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <div className='test-page'>
     <div className='test-container'>
-      <ItemCard   
+      <ItemCard
         title={"Hamburguer"}
         description={"Alface, tomate, carne em um pão macio com gergelim"}
         price={12}
@@ -16,7 +16,7 @@ export default async function Home() {
         handle_click={() => alert("Hamburguer")}
       />
     </div>
-    <div className='test-container2'>
+    <div className='test-container'>
       <ItemCard   
         title={"Pizza mussarela"}
         description={"Molho de tomate, queijo e manjericão s d asd adasdasd dasnasnsdnaasld"}

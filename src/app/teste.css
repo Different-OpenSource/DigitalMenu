@@ -4,12 +4,11 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-color: rgb(223, 219, 219);
 }
 
 .test-container{
     margin-bottom: 30px;
-}
-
-.test-container2{
-    margin-bottom: 30px;
+    width: 100%;
+    max-width: 350px;
 }
