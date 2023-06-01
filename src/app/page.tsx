@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from 'react';
-import { Categories } from './components/Categories Menu/categories-menu';
+import { useState } from 'react';
+import { Categories } from './components/CategoriesMenu';
 import items from '../../data';
 import './globals.css';
 
@@ -8,15 +8,13 @@ const allCategories = ['Tudo', ...new Set(items.map(item => item.category))];
 
 export default function App() {
   const [categories, setCategories] = useState(allCategories);
-  const filterItems = (category: string) => {
-    // Função para filtrar os itens por categoria
-    console.log('click', category);
+  const handleCategoryClick = (category: string) => {
   };
 
   return (
     <main>
       <section className="menu section">
-        <Categories categories={categories} filterItems={filterItems} />
+        <Categories categories={categories} handleCategoryClick={handleCategoryClick}/>
       </section>
     </main>
   );
