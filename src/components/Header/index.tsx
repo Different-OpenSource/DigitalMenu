@@ -1,19 +1,18 @@
 'use client';
-import React from "react";
 import Link from "next/link";
 import styles from './styles.module.css';
 import SearchIcon from "../SearchIcon";
 
-function SearchBarFunction() {
-    alert('SearchBarFunction');
+function emptyFunction() {
+    
 }
 
-function Header(): React.JSX.Element {
+function Header({emptyFunction}): React.JSX.Element {
     return(
     <header className={styles.container}>
         <div className={styles.searchButtonBox}>
             <div>
-                <SearchIcon onClick={() => SearchBarFunction()}/>
+                <SearchIcon onClick={() => emptyFunction()}/>
             </div>
             <div>
                 <Link href={"/"}>
