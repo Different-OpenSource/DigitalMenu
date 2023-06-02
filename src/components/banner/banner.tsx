@@ -3,8 +3,12 @@ import styles from './banner.module.css'
 import { useState, useEffect } from 'react';
 import IconButton from '../iconButton/iconButton'
 
-function Banner({ imageList }) {
-    const [selectedBanner, setSelectedBanner] = useState(0);
+interface BannerProps {
+    imageList: string[];
+}
+
+function Banner({ imageList }: BannerProps) {
+    const [selectedBanner, setSelectedBanner] = useState<number>(0);
 
     const nextBanner = () => {
         if (selectedBanner + 1 < imageList.length) {
