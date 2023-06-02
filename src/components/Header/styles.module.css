@@ -1,0 +1,15 @@
+.container {
+  padding: 12px;
+  background: #352c2c;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.searchButtonBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+  
