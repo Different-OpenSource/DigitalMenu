@@ -21,7 +21,7 @@
   cursor: pointer;
   border-radius: 0.25rem;;
 }
-.filter-btn:hover,
+.filterBtn:hover,
 .filterBtn.active {
   background: var(--clr-green);
   color: var(--clr-white);
