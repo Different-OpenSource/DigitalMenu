@@ -1,5 +1,4 @@
-import React from 'react';
-import styles from './iconButton.module.css';
+import styles from './styles.module.css';
 
 interface IconButtonProps {
     path: string;

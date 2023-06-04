@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import styles from './banner.module.css'
-import { useState, useEffect } from 'react';
+import styles from './styles.module.css'
+import { useState } from 'react';
 import IconButton from '../iconButton/iconButton'
 
 interface BannerProps {
@@ -22,13 +22,9 @@ function Banner({ imageList }: BannerProps) {
         }
     }
 
-    useEffect(() => {
-
-    }, [imageList]);
-
     return (
         <div className={styles.container}>
-            <IconButton path="/icons/left-arrow24px.svg" onClick={previousBanner} />
+            <IconButton path="/icons/left-arrow.svg" onClick={previousBanner} />
             <Image
                 src={imageList[selectedBanner]}
                 alt="Banner image"
@@ -36,7 +32,7 @@ function Banner({ imageList }: BannerProps) {
                 height={400}
                 priority
             />
-            <IconButton path="/icons/right-arrow24px.svg" onClick={nextBanner} />
+            <IconButton path="/icons/right-arrow.svg" onClick={nextBanner} />
         </div>
     )
 }
