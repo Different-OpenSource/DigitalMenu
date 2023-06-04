@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from 'react'
-import './page.scss'
+import styles from './styles.module.scss';
 import { itemList } from '../../../mocks/item';
 import { Item } from '@/app/models/item';
 
@@ -15,21 +15,21 @@ export default function ItemDetailPage({ params }: { params: { id: string } }) {
     <>
       {
         currentItem ?
-          <div className='item-page-container'>
-            <div className='item-details'>
-              <div className='item-image'>
+          <div className={styles.itemPageContainer}>
+            <div className={styles.itemDetails}>
+              <div className={styles.itemImage}>
                 <img src={currentItem?.image} />
-                <div className='item-title'>
+                <div className={styles.itemTitle}>
                   <span>
                     {currentItem?.title}
                   </span>
                 </div>
-                <div className='item-description'>
+                <div className={styles.itemDescription}>
                   <span>
                     {currentItem?.description}
                   </span>
                 </div>
-                <div className='item-price'>
+                <div className={styles.itemPrice}>
                   <span>
                     $ {currentItem?.price}
                   </span>
