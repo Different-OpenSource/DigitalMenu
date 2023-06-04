@@ -1,5 +1,5 @@
 import { useState, FC } from 'react';
-import './style.module.css';
+import styles from './styles.module.css';
 interface CategoriesMenuProps {
   categories: string[];
   handleCategoryClick: (category: string) => void;
@@ -9,12 +9,12 @@ export const Categories: FC<CategoriesMenuProps> = ({ categories, handleCategory
   let [currentCategory, setCurrentCategory] = useState<number>(0);
 
   return (
-    <div className="btn-container">
+    <div className={styles.btnContainer}>
       {categories.map((category: string, index: number) => {
         return (
           <button
             type="button"
-            className={`filter-btn ${index === currentCategory ? 'active' : ''}`}
+            className={`${styles.filterBtn} ${index === currentCategory ? 'active' : ''}`}
             key={index}
             onClick={() => {
               handleCategoryClick(category)

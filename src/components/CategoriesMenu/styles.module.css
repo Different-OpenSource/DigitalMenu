@@ -1,13 +1,15 @@
 .menu {
   padding: 5rem 0;
+  --clr-white: #fff;
+  --clr-green: #5fc570;
 }
 
-.btn-container {
+.btnContainer {
   margin-bottom: 4rem;
   display: flex;
   justify-content: center;
 }
-.filter-btn {
+.filterBtn {
   background: transparent;
   border-color: transparent;
   font-size: 1rem;
@@ -19,8 +21,8 @@
   cursor: pointer;
   border-radius: 0.25rem;;
 }
-.filter-btn:hover,
-.filter-btn.active {
+.filterBtn:hover,
+.filterBtn.active {
   background: var(--clr-green);
   color: var(--clr-white);
 }
