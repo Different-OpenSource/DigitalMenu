@@ -1,0 +1,46 @@
+.itemImage {
+  img {
+    height: auto;
+    max-width: min(100%, 500px);
+  }
+
+  max-width: 500px;
+}
+
+.itemDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itemTitle {
+  margin-top: 1.5rem;
+
+  span {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+}
+
+.itemDescription {
+  margin-top: 1rem;
+  text-align: justify;
+
+  span {
+    font-size: 0.875rem;
+  }
+}
+
+.itemPrice {
+  margin-top: 1rem;
+
+  span {
+    font-size: 18px;
+    font-weight: 1.125rem;
+  }
+}
+
+.itemPageContainer {
+  padding: 1rem;
+  max-width: 100%;
+}
