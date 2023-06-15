@@ -1,5 +1,5 @@
 "use client"
-import './ItemCard.css';
+import styles from './styles.module.css';
 
 interface ItemCardProps {
   title: string;
@@ -20,21 +20,21 @@ const ItemCard: React.FC<ItemCardProps> = ({
 }) => {
 
   return (
-    <div className="item-card" onClick={handle_click}>
-      <div className="item-card-content">
-        <div className="left-column">
-            <div className='item-title'>
+    <div className={styles.itemCard} onClick={handle_click}>
+      <div className={styles.itemCardContent}>
+        <div className={styles.leftColumn}>
+            <div className={styles.itemTitle}>
                 <h2 >{title}</h2>
             </div>
-            <div className='item-description'>
+            <div className={styles.itemDescription}>
                 <p >{description}</p>
             </div>
-            <div className='item-price'>
+            <div className={styles.itemPrice}>
                 <p><strong>${price}</strong></p>
             </div>
         </div>
-        <div className="right-column">
-            <img className='item-image' src={src} alt={alt} />
+        <div className={styles.rightColumn}>
+            <img className={styles.itemImage} src={src} alt={alt} />
         </div>
       </div>
   </div>

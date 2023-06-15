@@ -1,4 +1,4 @@
-.item-card{
+.itemCard{
     display: flex;
     align-items: center;
     color: rgb(0, 0, 0);
@@ -11,32 +11,32 @@
     cursor: pointer;
 }
 
-.item-card:hover {
+.itemCard:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   }
 
 
-.item-card-content {
+.itemCardContent {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
   }
   
-.left-column {
+.leftColumn {
     flex-direction: column;
     margin-right: auto;
     margin-left: 2%;
     margin-right: 1%;
   }
   
-.right-column {
+.rightColumn {
     margin-left: auto;
     display: flex;
     align-items: flex-start;
   }
 
-.item-image{
+.itemImage{
     margin-top: 1%;
     margin-bottom: 1%;
     width: 50px; 
@@ -46,15 +46,15 @@
     margin-right: 10px;
   }
   
-.item-title{
+.itemTitle{
     margin-top: 1%;
   }
 
-.item-description{
+.itemDescription{
     margin-top: 1%;
   }
 
-.item-price{
+.itemPrice{
     margin-top: 1%;
     margin-bottom: 1%;
   }
