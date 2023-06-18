@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import { Categories } from '../components/CategoriesMenu';
+import { Categories } from 'components/CategoriesMenu';
 import items from '../../data';
 import './globals.css';
 

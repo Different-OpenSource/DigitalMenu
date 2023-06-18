@@ -1,4 +1,4 @@
-import { Item } from "@/app/models/item";
+import { Item } from "interfaces/item";
 
 export const itemList: Item[] = [{
     id: '123',
