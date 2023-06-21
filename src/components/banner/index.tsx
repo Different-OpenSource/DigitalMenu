@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import styles from './styles.module.css'
 import { useState } from 'react';
-import IconButton from '../iconButton/iconButton'
+import IconButton from '../IconButton/index'
 
 interface BannerProps {
     imageList: string[];
